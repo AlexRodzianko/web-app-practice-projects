@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="script/script.js" defer></script>
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <h1>Unit Converter</h1>
+
+    <div class="content-box">
+      <div class="input-box">
+        <div>
+          <h2>Metric/Imperial unit conversion</h2>
+        </div>
+
+        <div>
+          <form>
+            <input
+              type="number"
+              class="input-number"
+              id="input-num"
+              min="0"
+              placeholder="input"
+              onkeyup="Calculate(this)"
+              oninput="limit()"
+              maxlength="7"
+            />
+          </form>
+        </div>
+      </div>
+
+      <div class="output-box">
+        <div class="output-content-container">
+          <div class="output-content">
+            <h3>Length (Meter/Feet)</h3>
+            <p id="output-content-p1" class="output-content-p">
+              meters = | feet =
+            </p>
+          </div>
+
+          <div class="output-content">
+            <h3>Volume (Liters/Gallons)</h3>
+            <p id="output-content-p2" class="output-content-p">
+              liters = | gallons =
+            </p>
+          </div>
+
+          <div class="output-content">
+            <h3>Mass (Kilograms/Pounds)</h3>
+            <p id="output-content-p3" class="output-content-p">
+              kilograms = | pounds =
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
